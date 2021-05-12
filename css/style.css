@@ -31,7 +31,11 @@ main .sidebar{
     opacity: 0.6;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.logo img{
     width: 30px;
+    margin-right: 5px;
 }
 
 h4{
@@ -67,11 +71,34 @@ li{
 
 .download{
     border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    margin-top: 100px;
+    opacity: 0.6;
+    width: 180px;
 }
 
 .download img{
     width: 15px;
 }
+
+.profile{
+    margin-top: 12px;
+    opacity: 1.0;
+}
+
+.profile img{
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.profile div{
+    font-size: 12px;
+}
+
+/* CONTENT */
 
 main .content{
     background-color: rgb(20, 25, 34);
@@ -105,8 +132,5 @@ main .content{
     background-color: rgb(40, 40, 40);
 }
 
-.app{
-    font-size: 10px;
-    color: red;
-}
+
 
