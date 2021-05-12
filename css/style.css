@@ -33,6 +33,13 @@ main .sidebar{
     margin-left: 20px;
 }
 
+.home{
+    border-left: 2px solid rgb(173, 255, 47);
+    padding-left: 18px;
+    margin-left: 0;
+    opacity: 0.9;
+}
+
 .logo img{
     width: 30px;
     margin-right: 5px;
@@ -127,10 +134,29 @@ main .content{
     padding: 10px;
 }
 
+.top-bar2 ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 12px;
+}
+
+.top-bar2 li{
+    padding-left: 15px;
+}
+
+.linea{
+    border-bottom: 2px solid rgb(173, 255, 47);
+    width: 25px;
+    margin-top: 2px;
+    margin-left: 350px;
+}
+
 .box footer{
     height: 90px;
     background-color: rgb(40, 40, 40);
 }
+
 
 
 
