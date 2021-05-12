@@ -1,0 +1,112 @@
+.container-fluid{
+    width: 100%;
+}
+
+.box{
+    max-height: 100vh;
+}
+
+.box main{
+    height: calc(100vh - 90px);
+}
+
+main .sidebar{
+    background-color: black;
+    font-size: 10px;
+}
+
+/* SIDEBAR */
+
+.logo-principale{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 30px;
+}
+
+h4{
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.plus{
+    color: white;
+    opacity: 0.6;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.plus i{
+    font-size: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+ul{
+    color: white;
+    opacity: 0.6;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+.download{
+    border-bottom: 1px solid white;
+}
+
+.download img{
+    width: 15px;
+}
+
+main .content{
+    background-color: rgb(20, 25, 34);
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.top-bar{
+    background-color: rgba(8, 11, 18, 0.4);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.top-bar div{
+    width: 200px;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-right: 250px;
+    padding: 10px;
+}
+
+.box footer{
+    height: 90px;
+    background-color: rgb(40, 40, 40);
+}
+
+.app{
+    font-size: 10px;
+    color: red;
+}
+
