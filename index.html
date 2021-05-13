@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/12bool-responsive.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,42 +16,52 @@
     <div class="container-fluid box">
         <main class="row">
             <div class="sidebar col-xs-2 col-sm-5 col-md-4 col-lg-2">
-                <img class="logo-principale" src="./img/logo.svg" alt="logo">
-                <div class="logo home">
-                    <img src="./img/home.svg" alt="home">
-                    <div>Home</div>
+
+                <div class="sidebar-first">
+                    <img class="logo-principale" src="./img/logo.svg" alt="logo">
+                    <div class="logo home">
+                        <img src="./img/home.svg" alt="home">
+                        <div>Home</div>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/search.svg" alt="search">
+                        <div>Cerca</div>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/libreria.svg" alt="libreria">
+                        <div>La tua libreria</div>
+                    </div>
+
+                    <div class="sidebar-playlist">
+                        <h4>PLAYLIST</h4>
+                        <div class="plus"><i class="fas fa-plus-square"></i>Crea Playlist</div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="logo">
-                    <img src="./img/search.svg" alt="search">
-                    <div>Cerca</div>
+
+                <div class="sidebar-last">
+                    <div class="logo download">
+                        <img src="./img/download.svg" alt="download">
+                        <div class="app">Installa app</div>
+                    </div>
+                    <div class="logo profile">
+                        <img src="./img/profile.svg" alt="profile">
+                        <div>John Doe</div>
+                    </div>
                 </div>
-                <div class="logo">
-                    <img src="./img/libreria.svg" alt="libreria">
-                    <div>La tua libreria</div>
-                </div>
-                <h4>PLAYLIST</h4>
-                <div class="plus"><i class="fas fa-plus-square"></i>Crea Playlist</div>
-                <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
-                <div class="logo download">
-                    <img src="./img/download.svg" alt="download">
-                    <div class="app">Installa app</div>
-                </div>
-                <div class="logo profile">
-                    <img src="./img/profile.svg" alt="profile">
-                    <div>John Doe</div>
-                </div>
+
             </div>
             
             <div class="content col-xs-10 col-sm-7 col-md-8 col-lg-10">
-                <div class="top-bar">
+                <div class="top-bar col-xs-10 col-sm-7 col-md-8 col-lg-10">
                     <div>EFFETTUA L'UPGRADE</div>
                 </div>
                 <div class="top-bar2">
@@ -67,7 +79,46 @@
 
         </main>
 
-        <footer></footer>
+        <footer class="row">
+            <div class="footer1">
+                <div>
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                </div>
+                <div class="footer1-scritte">
+                    <h5>Sinister</h5>
+                    <div>Brano Nome</div>
+                </div>
+                <div><i class="far fa-heart"></i></div>
+                <div><i class="far fa-folder"></i></div>
+            </div>
+
+            <div class="footer2">
+                <div class="footer2-icone">
+                    <div><i class="fas fa-random"></i></div>
+                    <div><i class="fas fa-step-backward"></i></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <div><i class="fas fa-step-forward"></i></div>
+                    <div><i class="fas fa-redo-alt"></i></div>
+                </div>
+                <div class="footer2-barra">
+                    <div>0:25</div>
+                    <div class="barra-tempo">
+                        <div></div>
+                    </div>
+                    <div>4:35</div>
+                </div>
+            </div>
+
+            <div class="footer3">
+                <div><i class="fas fa-th-list"></i></div>
+                <div><i class="fas fa-desktop"></i></div>
+                <div><i class="fas fa-volume-up"></i></div>
+                <div class="barra-tempo2">
+                    <div></div>
+                </div>
+            </div>
+
+        </footer>
 
     </div>
     
