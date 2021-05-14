@@ -209,6 +209,29 @@ ul li:hover{
     padding-right: 20px;
 }
 
+.albums-play:hover{
+    position: relative;
+}
+
+.albums-play i{
+    display: none;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.albums-play:hover i{
+    cursor: pointer;
+    display: block;
+}
+
+.albums-play:hover img{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
 .albums2{
     padding-right: 20px;
     text-align: center;
