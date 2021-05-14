@@ -72,7 +72,6 @@ h4{
 
 ul{
     color: white;
-    opacity: 0.6;
     list-style: none;
     margin-left: 20px;
     margin-top: 15px;
@@ -80,6 +79,7 @@ ul{
 
 li{
     margin-top: 10px;
+    opacity: 0.6;
 }
 
 .download{
@@ -140,11 +140,21 @@ main .content{
     padding: 10px;
 }
 
+.top-bar div:hover{
+    font-size: 14px;
+    padding: 12px;
+}
+
 .top-bar2 ul{
     display: flex;
     justify-content: center;
     margin-top: 100px;
     font-size: 12px;
+}
+
+ul li:hover{
+    cursor: pointer;
+    opacity: 1.0;
 }
 
 .top-bar2 li{
@@ -172,12 +182,12 @@ main .content{
 }
 
 .albums{
-    padding-right: 15px;
     text-align: center;
+    padding-right: 20px;
 }
 
 .albums2{
-    padding-right: 15px;
+    padding-right: 20px;
     text-align: center;
 }
 
@@ -215,103 +225,142 @@ main .content{
 .box footer{
     height: 90px;
     background-color: rgb(40, 40, 40);
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer1{
     display: flex;
     align-items: center;
-    margin-left: 10px;
+}
+  
+.footer-sinistra, .footer-destra{
+    width: 230px;
+    height: 100%;
     color: white;
 }
-
-.footer1 img{
-    width: 50px;
-    height: 50px;
+  
+.footer-centrale{
+    color: white;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
-
-.footer1-scritte{
-    margin-left: 15px;
+  
+/* FOOTER SINISTRA */
+  
+.footer-sinistra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
 }
-
-.footer1-scritte div{
+  
+.footer-sinistra-albums{
+    width: 30%;
+}
+  
+.footer-sinistra-albums img{
+    width: 100%;
+}
+  
+.footer-sinistra-scritte{
+    width: 50%;
+    padding: 0 15px;
+}
+  
+.footer-sinistra-scritte div{
     color: rgb(128, 128, 128);
     font-size: 10px;
+    line-height: 1.4;
 }
-
-.footer1 i{
+  
+.footer-sinistra-icone{
+    display: flex;
+    width: 20%;
+    padding: 0 5px;
     color: rgb(128, 128, 128);
-    margin-left: 30px;
 }
-
-.footer2{
-    color: white;
-    margin-bottom: 10px;
+  
+.footer-sinistra-icone i{
+    padding-right: 10px;
 }
-
-.footer2-icone{
+  
+/* FOOTER CENTRALE */
+  
+.footer-centrale-icone2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.footer2-icone i{
+  
+.footer-centrale-icone2 i{
     padding: 15px;
 }
-
-.footer2-icone .play{
+  
+.footer-centrale-icone2 .play{
     font-size: 30px;
 }
-
-.footer2-barra{
+  
+.footer-centrale-barra{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: 10px;
 }
-
-.barra-tempo{
-    width: 400px;
+  
+.footer-centrale-barra-tempo{
+    flex-basis: 50%;
     height: 4px;
     border-radius: 10px;
     background-color: rgb(128, 128, 128);
     margin-left: 25px;
     margin-right: 25px;
 }
-
-.barra-tempo div{
-    width: 70px;
+  
+.footer-centrale-barra-tempo div{
+    width: 20%;
     height: 4px;
     border-radius: 10px;
     background-color: white;
 }
-
-.footer3{
+  
+/* FOOTER DESTRA */
+  
+.footer-destra{
     display: flex;
     align-items: center;
-    color: white;
-    margin-right: 10px;
+    justify-content: space-around;
+}
+  
+.footer-destra-icone3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     font-size: 12px;
+    width: 50%;
+    padding: 0 15px;
 }
-
-.footer3 i{
+  
+.footer-destra-icone3 i{
+    padding-left: 20px;
+}
+  
+.footer-destra-barra2{
+    padding-left: 10px;
     padding-right: 15px;
+    width: 50%;
 }
-
-.barra-tempo2{
-    width: 100px;
+  
+.footer-destra-barra-tempo2{
+    flex-basis: 100%;
     height: 4px;
     border-radius: 10px;
     background-color: rgb(128, 128, 128);
 }
-
-.barra-tempo2 div{
-    width: 30px;
+  
+.footer-destra-barra-tempo2 div{
+    width: 30%;
     height: 4px;
     border-radius: 10px;
     background-color: white;
 }
+  
 
 
 
