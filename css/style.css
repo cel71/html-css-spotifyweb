@@ -33,8 +33,7 @@ main .sidebar{
 .logo{
     display: flex;
     align-items: center;
-    color: white;
-    opacity: 0.6;
+    color: lightgrey;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -43,12 +42,23 @@ main .sidebar{
     border-left: 2px solid rgb(173, 255, 47);
     padding-left: 18px;
     margin-left: 0;
-    opacity: 0.9;
+    opacity: 0.7;
+}
+
+.home:hover{
+    cursor: pointer;
+    opacity: 1.0;
 }
 
 .logo img{
     width: 30px;
     margin-right: 5px;
+    opacity: 0.6;
+}
+
+.logo:hover div{
+    cursor: pointer;
+    color: white;
 }
 
 h4{
@@ -58,10 +68,14 @@ h4{
 }
 
 .plus{
-    color: white;
-    opacity: 0.6;
+    color: grey;
     margin-top: 15px;
     margin-left: 20px;
+}
+
+.plus:hover{
+    cursor: pointer;
+    color: white;
 }
 
 .plus i{
@@ -88,6 +102,14 @@ li{
     margin-top: 80px;
     opacity: 0.6;
     width: 180px;
+}
+
+.download div{
+    color: grey;
+}
+
+.download:hover div{
+    color: white;
 }
 
 .download img{
@@ -143,6 +165,7 @@ main .content{
 .top-bar div:hover{
     font-size: 14px;
     padding: 12px;
+    cursor: pointer;
 }
 
 .top-bar2 ul{
@@ -269,12 +292,23 @@ ul li:hover{
     font-size: 10px;
     line-height: 1.4;
 }
+
+.footer-sinistra-scritte:hover div{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
   
 .footer-sinistra-icone{
     display: flex;
     width: 20%;
     padding: 0 5px;
     color: rgb(128, 128, 128);
+}
+
+i:hover{
+    cursor: pointer;
+    color: white;
 }
   
 .footer-sinistra-icone i{
@@ -296,6 +330,11 @@ ul li:hover{
 .footer-centrale-icone2 .play{
     font-size: 30px;
 }
+
+.play:hover{
+    cursor: pointer;
+    font-size: 33px;
+}
   
 .footer-centrale-barra{
     display: flex;
@@ -305,6 +344,8 @@ ul li:hover{
 }
   
 .footer-centrale-barra-tempo{
+    display: flex;
+    align-items: center;
     flex-basis: 50%;
     height: 4px;
     border-radius: 10px;
@@ -312,12 +353,33 @@ ul li:hover{
     margin-left: 25px;
     margin-right: 25px;
 }
+
+.footer-centrale-barra-tempo:hover{
+    cursor: pointer;
+}
   
 .footer-centrale-barra-tempo div{
     width: 20%;
     height: 4px;
     border-radius: 10px;
     background-color: white;
+}
+
+.footer-centrale-barra-tempo:hover div{
+    cursor: pointer;
+    background-color: rgb(173, 255, 47);
+    display: block;
+}
+
+.footer-centrale-barra-tempo i{
+    display: none;
+    font-size: 12px;
+}
+
+.footer-centrale-barra-tempo:hover i{
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
 }
   
 /* FOOTER DESTRA */
@@ -348,10 +410,16 @@ ul li:hover{
 }
   
 .footer-destra-barra-tempo2{
-    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
     height: 4px;
     border-radius: 10px;
     background-color: rgb(128, 128, 128);
+}
+
+.footer-destra-barra-tempo2:hover{
+    cursor: pointer;
 }
   
 .footer-destra-barra-tempo2 div{
@@ -359,6 +427,23 @@ ul li:hover{
     height: 4px;
     border-radius: 10px;
     background-color: white;
+}
+
+.footer-destra-barra-tempo2:hover div{
+    cursor: pointer;
+    background-color: rgb(173, 255, 47);
+    display: block;
+}
+
+.footer-destra-barra-tempo2 i{
+    display: none;
+    font-size: 12px;
+}
+
+.footer-destra-barra-tempo2:hover i{
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
 }
   
 
