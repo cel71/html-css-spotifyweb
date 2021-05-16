@@ -1,558 +1,726 @@
 *{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-}
-
-.container-fluid{
+  }
+  
+  /* STRUTTURA BASE */
+  
+  .container-fluid{
     width: 100%;
-}
-
-.box{
+  }
+  
+  .box{
     max-height: 100vh;
-}
-
-.box main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box main{
     height: calc(100vh - 90px);
-}
-
-main .sidebar{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .box footer{
     background-color: black;
-    font-size: 10px;
-    /* height: calc(100vh - 90px); */
-    height: 100%;
-}
-
-/* SIDEBAR */
-
-.logo-principale{
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.logo-principale2{
-    width: 30px;
-    display: none;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    color: lightgrey;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.home{
-    border-left: 2px solid rgb(173, 255, 47);
-    padding-left: 18px;
-    margin-left: 0;
-    opacity: 0.7;
-}
-
-.home:hover{
-    cursor: pointer;
-    opacity: 1.0;
-}
-
-.logo img{
-    width: 30px;
-    margin-right: 5px;
-    opacity: 0.6;
-}
-
-.logo:hover div{
-    cursor: pointer;
-    color: white;
-}
-
-h4{
-    color: white;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.plus{
-    color: grey;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-
-.plus:hover{
-    cursor: pointer;
-    color: white;
-}
-
-.plus i{
-    font-size: 30px;
-    vertical-align: middle;
-    padding-right: 10px;
-}
-
-ul{
-    color: white;
-    list-style: none;
-    margin-left: 20px;
-    margin-top: 15px;
-}
-
-li{
-    margin-top: 10px;
-    opacity: 0.6;
-}
-
-.download{
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
-    margin-top: 80px;
-    opacity: 0.6;
-    width: 160px;
-}
-
-.download div{
-    color: grey;
-}
-
-.download:hover div{
-    color: white;
-}
-
-.download img{
-    width: 15px;
-}
-
-.profile{
-    margin-top: 12px;
-    opacity: 1.0;
-}
-
-.profile img{
-    background-color: rgb(128, 128, 128);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-.profile div{
-    font-size: 12px;
-}
-
-/* CONTENT */
-
-main .content{
-    background-color: rgb(20, 25, 34);
-    overflow-y: scroll;
-    height: 100%;
-}
-
-.top-bar{
-    background-color: rgba(8, 11, 18, 0.4);
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-.top-bar div{
-    width: 200px;
-    border: 1.5px solid white;
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    margin-right: 25px;
-    padding: 10px;
-}
-
-.top-bar div:hover{
-    font-size: 14px;
-    padding: 12px;
-    cursor: pointer;
-}
-
-.top-bar2 ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    font-size: 12px;
-}
-
-ul li:hover{
-    cursor: pointer;
-    opacity: 1.0;
-}
-
-.top-bar2 li{
-    padding-left: 15px;
-}
-
-.linea{
-    text-decoration: underline rgb(173, 255, 47) 2px;
-}
-
-/* ALBUMS */
-
-.title{
-    color: white;
-    margin: 40px 20px 20px;
-}
-
-.albums-container{
-    display: flex;
-    margin-left: 20px;
-    color: white;
-}
-
-.albums{
-    text-align: center;
-    padding-right: 20px;
-}
-
-.albums-play:hover{
-    position: relative;
-}
-
-.albums-play i{
-    display: none;
-    font-size: 50px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-
-.albums-play:hover i{
-    cursor: pointer;
-    display: block;
-}
-
-.albums-play:hover img{
-    cursor: pointer;
-    opacity: 0.4;
-}
-
-.albums2{
-    padding-right: 20px;
-    text-align: center;
-}
-
-.albums img{
-    width: 160px;
-}
-
-.albums2 img{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-}
-
-.title-albums{
-    font-size: 14px;
-    margin-top: 10px;
-    width: 160px;
-}
-
-.sottotitolo{
-    color: rgb(128, 128, 128);
-    font-size: 10px;
-    margin-top: 10px;
-    width: 160px;
-}
-
-.sottotitolo2{
-    color: rgb(128, 128, 128);
-    font-size: 12px;
-    margin-left:20px;
-    margin-bottom: 15px;
-}
-
-/* FOOTER */
-
-.box footer{
     height: 90px;
-    background-color: rgb(40, 40, 40);
-    display: flex;
-    align-items: center;
-}
+  }
   
-.footer-sinistra, .footer-destra{
+  .sidebar{
     width: 200px;
-    height: 100%;
-    color: white;
-}
-  
-.footer-centrale{
-    color: white;
-    height: 100%;
-    flex-grow: 1;
-    flex-basis: 50%;
-}
-  
-/* FOOTER SINISTRA */
-  
-.footer-sinistra{
+    height: calc(100vh - 90px);
+    background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15px;
-}
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
+  }
   
-.footer-sinistra-albums{
-    width: 30%;
-}
+  .content{
+    background-color: rgb(20, 25, 34);
+    width: calc(100% - 200px);
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+  }
   
-.footer-sinistra-albums img{
-    width: 100%;
-}
+  /* SIDEBAR */
   
-.footer-sinistra-scritte{
-    width: 50%;
-    padding: 0 15px;
-}
+  /* SIDEBAR INIZIALE */
   
-.footer-sinistra-scritte div{
-    color: rgb(128, 128, 128);
-    font-size: 10px;
-    line-height: 1.4;
-}
-
-.footer-sinistra-scritte:hover div{
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-}
+  .logo-principale{
+      width: 150px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+  }
   
-.footer-sinistra-icone{
+  .logo-principale2{
+      width: 30px;
+      display: none;
+  }
+  
+  .logo{
+      display: flex;
+      align-items: center;
+      color: lightgrey;
+      margin-top: 10px;
+      margin-left: 20px;
+  }
+  
+  .home{
+      border-left: 2px solid rgb(173, 255, 47);
+      padding-left: 18px;
+      margin-left: 0;
+      opacity: 0.7;
+  }
+  
+  .home:hover{
+      cursor: pointer;
+      opacity: 1.0;
+  }
+  
+  .logo img{
+      width: 30px;
+      margin-right: 5px;
+      color: grey;
+  }
+  
+  .logo:hover div{
+      cursor: pointer;
+      color: white;
+  }
+  
+  /* SIDEBAR CENTRALE */
+  
+  .playlist{
+    margin-top: 30px;
+  }
+  
+  h4{
+      color: white;
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+  
+  .plus{
+      color: grey;
+      margin-top: 15px;
+      margin-left: 20px;
+  }
+  
+  .plus:hover{
+      cursor: pointer;
+      color: white;
+  }
+  
+  .plus i{
+      font-size: 30px;
+      vertical-align: middle;
+      padding-right: 10px;
+  }
+  
+  ul{
+      color: white;
+      list-style: none;
+      margin-left: 20px;
+      margin-top: 15px;
+  }
+  
+  li{
+      margin-top: 10px;
+      color: grey;
+  }
+  
+  /* SIDEBAR FINALE */
+  
+  .download{
+      border-bottom: 1px solid white;
+      padding-bottom: 8px;
+      color: grey;
+      width: 150px;
+  }
+  
+  .download div{
+      color: grey;
+  }
+  
+  .download:hover div{
+      color: white;
+  }
+  
+  .download img{
+      width: 15px;
+  }
+  
+  .profile{
+      margin-top: 12px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  
+  .profile img{
+      background-color: rgb(128, 128, 128);
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+  }
+  
+  .profile div{
+      font-size: 12px;
+  }
+  
+  /* CONTENT */
+  
+  /* TOPBAR */
+  
+  .top-bar{
+      background-color: rgba(8, 11, 18, 0.4);
+      height: 80px;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content:flex-end;
+  }
+  
+  .top-bar div{
+      width: 200px;
+      border: 1.5px solid white;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      margin-right: 224px;
+      font-size: 12px;
+      padding: 10px;
+  }
+  
+  .top-bar div:hover{
+      font-size: 14px;
+      padding: 12px;
+      cursor: pointer;
+  }
+  
+  /* TOPBAR 2 */
+  
+  .top-bar2 ul{
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      font-size: 12px;
+  }
+  
+  ul li:hover{
+      cursor: pointer;
+      color: white;
+  }
+  
+  .top-bar2 li{
+      padding-left: 15px;
+  }
+  
+  .linea{
+      text-decoration: underline rgb(173, 255, 47) 2px;
+  }
+  
+  /* ALBUMS */
+  
+  .title{
+      color: white;
+      margin: 40px 20px 20px;
+  }
+  
+  .albums-container{
+      display: flex;
+      margin-left: 20px;
+      color: white;
+  }
+  
+  .albums-container-piccolo{
     display: flex;
-    width: 20%;
-    padding: 0 5px;
-    color: rgb(128, 128, 128);
-}
+  }
+  
+  .albums{
+      text-align: center;
+      padding-right: 20px;
+  }
+  
+  .albums-play:hover{
+      position: relative;
+  }
+  
+  .albums-play i{
+      display: none;
+      font-size: 50px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+  }
+  
+  .albums-play:hover i{
+      cursor: pointer;
+      display: block;
+  }
+  
+  .albums-play:hover img{
+      cursor: pointer;
+      opacity: 0.4;
+  }
+  
+  .albums2{
+      padding-right: 20px;
+      text-align: center;
+  }
+  
+  .albums img{
+      width: 160px;
+  }
+  
+  .albums2 img{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+  }
+  
+  .title-albums{
+      font-size: 14px;
+      margin-top: 10px;
+      width: 160px;
+  }
+  
+  .sottotitolo{
+      color: rgb(128, 128, 128);
+      font-size: 10px;
+      margin-top: 10px;
+      width: 160px;
+  }
+  
+  .sottotitolo2{
+      color: rgb(128, 128, 128);
+      font-size: 12px;
+      margin-left:20px;
+      margin-bottom: 15px;
+  }
+  
+  /* FOOTER */
+  
+  .box footer{
+      height: 90px;
+      background-color: rgb(40, 40, 40);
+      display: flex;
+      align-items: center;
+  }
+  
+  .footer-sinistra, .footer-destra{
+      width: 200px;
+      height: 100%;
+      color: white;
+  }
+  
+  .footer-centrale{
+      color: white;
+      height: 100%;
+      flex-grow: 1;
+      flex-basis: 50%;
+  }
+  
+  /* FOOTER SINISTRA */
+  
+  .footer-sinistra{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 15px;
+  }
+  
+  .footer-sinistra-albums{
+      width: 30%;
+  }
+  
+  .footer-sinistra-albums img{
+      width: 100%;
+  }
+  
+  .footer-sinistra-scritte{
+      width: 50%;
+      padding: 0 15px;
+  }
+  
+  .footer-sinistra-scritte div{
+      color: rgb(128, 128, 128);
+      font-size: 10px;
+      line-height: 1.4;
+  }
+  
+  .footer-sinistra-scritte:hover div{
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  
+  .footer-sinistra-icone{
+      display: flex;
+      width: 20%;
+      padding: 0 5px;
+      color: rgb(128, 128, 128);
+  }
+  
+  i:hover{
+      cursor: pointer;
+      color: white;
+  }
+  
+  .footer-sinistra-icone i{
+      padding-right: 10px;
+  }
+  
+  /* FOOTER CENTRALE */
+  
+  .footer-centrale-icone2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .footer-centrale-icone2 i{
+      padding: 15px;
+  }
+  
+  .footer-centrale-icone2 .play{
+      font-size: 30px;
+  }
+  
+  .play:hover{
+      cursor: pointer;
+      font-size: 33px;
+  }
+  
+  .footer-centrale-barra{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+  }
+  
+  .footer-centrale-barra-tempo{
+      display: flex;
+      align-items: center;
+      flex-basis: 50%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: rgb(128, 128, 128);
+      margin-left: 25px;
+      margin-right: 25px;
+  }
+  
+  .footer-centrale-barra-tempo:hover{
+      cursor: pointer;
+  }
+  
+  .footer-centrale-barra-tempo div{
+      width: 20%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: white;
+  }
+  
+  .footer-centrale-barra-tempo:hover div{
+      cursor: pointer;
+      background-color: rgb(173, 255, 47);
+      display: block;
+  }
+  
+  .footer-centrale-barra-tempo i{
+      display: none;
+      font-size: 12px;
+  }
+  
+  .footer-centrale-barra-tempo:hover i{
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+  }
+  
+  /* FOOTER DESTRA */
+  
+  .footer-destra{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .footer-destra-icone3{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 12px;
+      width: 50%;
+      padding: 0 15px;
+  }
+  
+  .footer-destra-icone3 i{
+      padding-left: 20px;
+  }
+  
+  .footer-destra-barra2{
+      padding-left: 10px;
+      padding-right: 15px;
+      width: 50%;
+  }
+  
+  .footer-destra-barra-tempo2{
+      display: flex;
+      align-items: center;
+      flex-basis: 50%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: rgb(128, 128, 128);
+  }
+  
+  .footer-destra-barra-tempo2:hover{
+      cursor: pointer;
+  }
+  
+  .footer-destra-barra-tempo2 div{
+      width: 30%;
+      height: 4px;
+      border-radius: 10px;
+      background-color: white;
+  }
+  
+  .footer-destra-barra-tempo2:hover div{
+      cursor: pointer;
+      background-color: rgb(173, 255, 47);
+      display: block;
+  }
+  
+  .footer-destra-barra-tempo2 i{
+      display: none;
+      font-size: 12px;
+  }
+  
+  .footer-destra-barra-tempo2:hover i{
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 992px){
+      .top-bar2 ul{
+          display: flex;
+          flex-wrap: wrap;
+          line-height: 30px;
+      }
+  
+      .albums-container{
+          display: flex;
+          flex-wrap: wrap;
+      }
 
-i:hover{
-    cursor: pointer;
-    color: white;
-}
+  }
+  @media only screen and (max-width: 768px){
+      .top-bar2 ul{
+          display: flex;
+          flex-wrap: wrap;
+          line-height: 30px;
+      }
   
-.footer-sinistra-icone i{
-    padding-right: 10px;
-}
+      .albums-container{
+          display: flex;
+          flex-wrap: wrap;
+      }
   
-/* FOOTER CENTRALE */
+      .albums img, .title-albums, .sottotitolo{
+          width: 160px;
+      }
   
-.footer-centrale-icone2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+      .albums2 img{
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+      }
   
-.footer-centrale-icone2 i{
-    padding: 15px;
-}
+  }
   
-.footer-centrale-icone2 .play{
-    font-size: 30px;
-}
-
-.play:hover{
-    cursor: pointer;
-    font-size: 33px;
-}
-  
-.footer-centrale-barra{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-}
-  
-.footer-centrale-barra-tempo{
-    display: flex;
-    align-items: center;
-    flex-basis: 50%;
-    height: 4px;
-    border-radius: 10px;
-    background-color: rgb(128, 128, 128);
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.footer-centrale-barra-tempo:hover{
-    cursor: pointer;
-}
-  
-.footer-centrale-barra-tempo div{
-    width: 20%;
-    height: 4px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.footer-centrale-barra-tempo:hover div{
-    cursor: pointer;
-    background-color: rgb(173, 255, 47);
-    display: block;
-}
-
-.footer-centrale-barra-tempo i{
-    display: none;
-    font-size: 12px;
-}
-
-.footer-centrale-barra-tempo:hover i{
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-}
-  
-/* FOOTER DESTRA */
-  
-.footer-destra{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-  
-.footer-destra-icone3{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 12px;
-    width: 50%;
-    padding: 0 15px;
-}
-  
-.footer-destra-icone3 i{
-    padding-left: 20px;
-}
-  
-.footer-destra-barra2{
-    padding-left: 10px;
-    padding-right: 15px;
-    width: 50%;
-}
-  
-.footer-destra-barra-tempo2{
-    display: flex;
-    align-items: center;
-    flex-basis: 50%;
-    height: 4px;
-    border-radius: 10px;
-    background-color: rgb(128, 128, 128);
-}
-
-.footer-destra-barra-tempo2:hover{
-    cursor: pointer;
-}
-  
-.footer-destra-barra-tempo2 div{
-    width: 30%;
-    height: 4px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.footer-destra-barra-tempo2:hover div{
-    cursor: pointer;
-    background-color: rgb(173, 255, 47);
-    display: block;
-}
-
-.footer-destra-barra-tempo2 i{
-    display: none;
-    font-size: 12px;
-}
-
-.footer-destra-barra-tempo2:hover i{
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px){
+  @media only screen and (max-width: 576px){
     .top-bar2 ul{
         display: flex;
         flex-wrap: wrap;
         line-height: 30px;
+        margin-right: 30px;
+        font-size: 10px;
     }
 
-    .albums-container{
-        display: flex;
-        flex-wrap: wrap;
+    .sidebar{
+      width: 80px;
+      height: calc(100vh - 90px);
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
-
-    .albums img, .title-albums, .sottotitolo{
-        width: 130px;
+  
+    .content{
+      background-color: rgb(20, 25, 34);
+      width: calc(100% - 80px);
+      height: calc(100vh - 90px);
+      overflow-y: scroll;
     }
-
-    .albums2 img{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-    }
-
-}
-
-@media only screen and (max-width: 768px){
-    .top-bar2 ul{
-        display: flex;
-        flex-wrap: wrap;
-        line-height: 30px;
-    }
-
-    .albums-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .albums img, .title-albums, .sottotitolo{
-        width: 160px;
-    }
-
-    .albums2 img{
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-    }
-
-}
-
-@media only screen and (max-width: 576px){
+  
     .logo-principale, .logo div{
-        display: none;
+          display: none;
     }
-
+  
     .logo-principale2{
-        display: block;
-        margin-top: 10px;
-        margin-left: 20px;
+          display: block;
+          margin-top: 15px;
+          margin-left: 25px;
     }
-
+  
     .logo img{
-        opacity: 1.0;
+          opacity: 1.0;
+          margin-left: 10px;
+          margin-top: 10px;
     }
-
+  
     .home, .download{
-        border: none;
+          border: none;
     }
-
+  
     .playlist{
-        display: none;
+          display: none;
+          margin-left: 10px;
     }
-
+  
     .download div, .profile div{
-        display: none;
+          display: none;
     }
-
+  
     .download img{
-        width: 20px;
+          width: 22px;
     }
 
+    .top-bar{
+        background-color: rgba(8, 11, 18, 0.4);
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+    }
+    
+    .top-bar div{
+        width: 200px;
+        border: 1.5px solid white;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        margin-right: 275px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .top-bar div:hover{
+        font-size: 14px;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    .title{
+        color: white;
+        margin: 40px 20px 20px;
+    }
+    
+    .albums-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        color: white;
+    }
+        
+    .albums{
+        text-align: center;
+        padding-right: 20px;
+    }
+    
+    .albums-play:hover{
+        position: relative;
+    }
+    
+    .albums-play i{
+        display: none;
+        font-size: 50px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+    
+    .albums-play:hover i{
+        cursor: pointer;
+        display: block;
+    }
+    
+    .albums-play:hover img{
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    .albums-container-centrale, .albums-container-finale{
+        flex-wrap: nowrap;
+    }
+    
+    .albums2{
+        padding-right: 20px;
+        text-align: center;
+    }
+    
+    .albums img{
+        width: 120px;
+    }
+    
+    .albums2 img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    
+    .title-albums{
+        font-size: 14px;
+        margin-top: 10px;
+        width: 120px;
+    }
+    
+    .sottotitolo{
+        color: rgb(128, 128, 128);
+        font-size: 10px;
+        margin-top: 10px;
+        width: 120px;
+    }
+    
+    .sottotitolo2{
+        color: rgb(128, 128, 128);
+        font-size: 12px;
+        margin-left:20px;
+        margin-bottom: 15px;
+    }
+
+      
+
+      
+
+
+
+
+
+
+
+  
 }
+  
 
 
 
